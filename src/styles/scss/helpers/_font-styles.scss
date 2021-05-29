@@ -1,0 +1,84 @@
+@mixin mobileNavLinks{
+    color: $neutral-black;
+    font-family: $titles;
+    font-size: 2.5rem;
+    transition: all 0.4s ease-in-out;
+    &:hover{
+        color: transparent;
+        letter-spacing: 5px;
+        -webkit-text-stroke: 1.5px $neutral-black;
+    }
+}
+
+@mixin mainTitle{
+    font-family: $titles;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    padding: 1.5rem 0 1.5rem 0;
+}
+
+@mixin subtitle{
+    border-bottom: 3px solid $corn;
+    font-family: $body;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    padding: 0 0 0.5rem 0;
+    font-weight: $bold;
+    margin: 1rem 0 0.4rem 0;
+}
+
+@mixin paragraph{
+    font-family: $body;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    background-color: $neutral-white;
+    padding-bottom: 0.5rem;
+}
+
+.bold{
+    font-weight: $bold;
+}
+
+.btn-link{
+    background-color: $corn;
+    border-radius: 3px;
+    color: $neutral-black;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: $body;
+    font-size: 0.7rem;
+    font-weight: $bold;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    padding: 0.2rem 0.5rem;
+    transition: all 0.4s ease-in-out;
+    width: 100%;
+    &:hover{
+        letter-spacing: 5px;
+        max-width: 100%;
+    }
+}
+
+.disabled{
+    pointer-events: none;
+    background-color: $neutral-gray;
+}
+
+@media only screen and (min-width: 1024px){
+    .btn-link{
+        max-width: 35%;
+        &:hover{
+            max-width: 100%;
+        }
+    }
+}
+
+.btn-scroll{
+    margin: 0 auto;
+    i{
+        cursor: pointer;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+}

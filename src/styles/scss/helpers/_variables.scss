@@ -1,0 +1,58 @@
+//Colors
+//Accents
+$corn: #ffd275;
+$mint: #a8f0d1;
+$salmon: #ff7e6b;
+//Neutral
+$neutral-black: #313131;
+$neutral-white: #fcfcfc;
+$neutral-gray: #dbdbdb;
+
+//Fonts
+$body-size: 14px;
+$body: 'Poppins', sans-serif;
+$titles: 'Paytone One', sans-serif;
+$light: 300;
+$regular: 400;
+$bold: 700;
+
+
+
+//Font-face
+//Paytone One - regular
+@font-face {
+    font-family: 'Paytone One';
+    font-style: normal;
+    font-weight: 400;
+    src:
+        url('../assets/fonts/paytone-one-v13-latin-ext_latin-regular.woff2') format('woff2'),
+        url('../assets/fonts/paytone-one-v13-latin-ext_latin-regular.woff') format('woff');
+}
+
+//Poppins - light
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    src: 
+        url('../assets/fonts/poppins-v15-latin-ext_latin-300.woff2') format('woff2'),
+        url('../assets/fonts/poppins-v15-latin-ext_latin-300.woff') format('woff');
+}
+//Poppins - regular
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src:
+        url('../assets/fonts/poppins-v15-latin-ext_latin-regular.woff2') format('woff2'),
+        url('../assets/fonts/poppins-v15-latin-ext_latin-regular.woff') format('woff');
+}
+//Poppins - bold
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src:
+        url('../assets/fonts/poppins-v15-latin-ext_latin-700.woff2') format('woff2'),
+        url('../assets/fonts/poppins-v15-latin-ext_latin-700.woff') format('woff');
+}

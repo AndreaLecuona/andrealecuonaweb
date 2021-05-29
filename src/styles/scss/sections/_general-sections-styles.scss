@@ -1,0 +1,182 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background-attachment: fixed;
+    background-blend-mode: multiply, normal;
+    background-color: $neutral-white;
+    background-image: url('../assets/images/dot-grid.png');
+    color: $neutral-black;
+    text-align: left;
+    .wrapper{
+        padding: 0.5rem;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        border-radius: 7px;
+    }
+}
+#hero{
+    color: $neutral-black;
+    h1,
+    h2{
+        font-family: $body;
+    }
+    h2{
+        font-size: 3rem;
+        line-height: 3rem;
+        margin-bottom: 1rem;
+    }
+    h1{
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+    .name{
+        font-family: $titles;
+    }
+}
+
+#about-me,
+#portfolio,
+#contact{
+    background-color: $neutral-white;
+    h3{
+        @include mainTitle;
+    }
+    h4{
+        @include subtitle;
+        text-transform: uppercase;
+    }
+    h5{
+        @include subtitle;
+    }
+    p{
+        @include paragraph;
+    }
+}
+#contact{
+    text-align: center;
+    h3{
+        margin: 0 auto;
+        padding-bottom: 1rem;
+    }
+    .social-media__links{
+        padding-bottom: 1.5rem;
+        a{
+            transition: all 0.4s ease-in-out;
+            color: $neutral-black;
+            cursor: pointer;
+            font-size: 1.5rem;
+            margin: 0 0.5rem;
+            &:hover{
+                color: $salmon;
+            }
+        }
+    }
+    .methods__email{
+        margin: 0 auto;
+        border-top: 3px solid $salmon;
+        p{
+            transition: all 0.4s ease-in-out;
+            cursor: pointer;
+            padding-bottom: 1.5rem;
+            &:hover{
+                letter-spacing: 2px;
+            }
+        }
+    }
+}
+
+footer{
+    text-align: center;
+    p{
+        @include paragraph;
+        background-color: $neutral-black;
+        color: $neutral-white;
+        font-size: 0.7rem;
+        padding-top: 1rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #hero{
+        h1{
+            font-size: 1.1rem;
+            line-height: 1.5rem;
+            margin-bottom: 0.5rem;
+            width: 55%;
+        }
+    }
+    #portfolio{
+        h3{
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        h4,
+        h5{
+            margin-top: 0;
+        }
+        .btn-link{
+            margin-bottom: 0;
+        }
+    }
+    #contact{
+        .methods__email{
+            width: 40%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #hero{
+        h1{
+            font-size: 1.3rem;
+            line-height: 1.7rem;
+            width: 48%;
+        }
+    }
+    #about-me,
+    #portfolio,
+    #contact{
+        h3{
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 1355px) {
+    #hero{
+        h1{
+            font-size: 1.7rem;
+            line-height: 2.2rem;
+            width: 47%;
+        }
+    }
+    #about-me,
+    #portfolio,
+    #contact{
+        h3{
+            font-size: 1.7rem;
+            line-height: 2.5rem;
+        }
+        h4{
+            font-size: 1.1rem
+        }
+        h5{
+            font-size: 1.3rem
+        }
+        p{
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        .social-media__links{
+            a{
+                font-size: 2rem;
+            }
+        }
+    }
+}

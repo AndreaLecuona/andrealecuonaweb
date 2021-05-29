@@ -1,0 +1,167 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+    .wrapper{
+        margin: 0 auto;
+        width: 85%;
+        overflow: hidden;
+    }
+    #hero{
+        height: 80vh;
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: flex-end;
+        }
+    }
+    #about-me,
+    #portfolio,
+    #contact{
+        margin: 5rem 0; 
+        padding-top: 69px; //mobile-nav width
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body{
+        #about-me,
+        #portfolio,
+        #contact{
+            margin: 5rem 0; 
+            padding-top: 120px; //web-nav width
+        }
+    }
+
+    .about-me__grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        .about-me__image-container{
+            height: 365px;
+            margin-top: 1.5rem;
+            img{
+                border-radius: 10px;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    .grid--simple{
+        display: grid;
+        grid-template-columns: minmax(180px, 25%) 1fr;
+        gap: 2rem;
+        margin-bottom: 1.5rem;
+        .project__description{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 135px;
+        }
+        .project__image-container{
+            align-items: start;
+            cursor: pointer;
+            height: 135px;
+            overflow: hidden;
+            width: 100%;
+            border-radius: 10px;
+            img{
+                margin-top: -11%;
+            }
+        }
+    }
+    .grid--double{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(150px, 25%) 1fr);
+        gap: 2rem 1rem;
+        margin-bottom: 3rem;
+        .challenge__description{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 155px;
+        }
+        .challenge__image-container{
+            align-items: start;
+            cursor: pointer;
+            overflow: hidden;
+            width: 100%;
+            height: 155px;
+            border-radius: 5px;
+            img{
+                border-radius: 5px;
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .about-me__grid{
+        .about-me__image-container{
+            img{
+                height: 95%;
+            }
+        }
+    }
+    .grid--simple{
+        grid-template-columns: minmax(180px, 28%) 1fr;
+        margin-bottom: 2.5rem;
+        .project__description,
+        .project__image-container{
+            height: 118px;
+            img{
+                margin-top: -16%;
+            }
+        }
+    }
+    .grid--double{
+        grid-template-columns: repeat(2, minmax(150px, 28%) 1fr);
+        .challenge__description,
+        .challenge__image-container{
+            height: 118px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1355px) {
+    .grid--simple{
+        .project__description,
+        .project__image-container{
+            img{
+                margin-top: -20%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .about-me__grid{
+        gap: 3rem;
+        .about-me__image-container{
+            img{
+                height: 125%;
+                width: 100%;
+            }
+        }
+    }
+    .grid--simple{
+        gap: 3rem;
+        .project__description,
+        .project__image-container{
+            height: 130px;
+            img{
+                margin-top: -19%;
+            }
+        }
+    }
+    .grid--double{
+        gap: 3rem 2rem;
+        .challenge__description,
+        .challenge__image-container{
+            height: 130px;
+        }
+    }
+}

@@ -1,0 +1,144 @@
+.navbar--web{
+    // width: 100%; NO PONERLE ANCHO
+    overflow: hidden;
+    background-color: $neutral-white;
+    padding-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    .web__list{
+        li{
+            display: flex;
+            width: 100vw;
+            transition: all .3s ease-in-out;
+            a{
+                max-width: 0;
+                height: 10px;
+                transition: all .3s ease-in-out;
+                font-family: $body;
+                font-weight: $bold;
+                color: $neutral-black;
+                font-size: 0.7rem;
+                -webkit-text-stroke: 1.5px transparent;
+            }
+            &:nth-child(1) a{
+                transition: all 0.4s ease-in-out;
+                &:hover,
+                &.onView{
+                    color: transparent;
+                    letter-spacing: 5px;
+                    -webkit-text-stroke: 1.5px $neutral-black;
+                }
+            }
+            &:nth-child(2) a{
+                transition: all 0.5s ease-in-out;
+                &:hover,
+                &.onView{
+                    color: transparent;
+                    letter-spacing: 5px;
+                    -webkit-text-stroke: 1.5px $neutral-black;
+                }
+            }
+            &:nth-child(3) a{
+                transition: all 0.6s ease-in-out;
+                &:hover,
+                &.onView{
+                    color: transparent;
+                    letter-spacing: 5px;
+                    -webkit-text-stroke: 1.5px $neutral-black;
+                }
+            }
+            .color{
+                width: 100%;
+                margin: 0 0 0 auto;
+                height: 10px;
+            }
+            &:nth-child(1) .color{
+                background-color: $mint;
+                transition: all 0.4s ease-in-out;
+            }
+            &:nth-child(2) .color{
+                background-color: $corn;
+                transition: all 0.5s ease-in-out;
+            }
+            &:nth-child(3) .color{
+                background-color: $salmon;
+                transition: all 0.6s ease-in-out;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .fix .navbar--web{
+        position: fixed;
+        z-index: 50;
+        .web__list{
+            li{
+                margin-bottom: 0.5rem;
+                justify-content: space-between;
+                align-items: center;
+                a{
+                    max-width: 100%;
+                    font-size: 1.5rem;
+                    height: 25px;
+                }
+                .color{
+                    height: 25px;
+                    width: 77%;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1024px){
+    .fix .navbar--web{
+        .web__list{
+            li{
+                a{
+                    font-size: 1.5rem;
+                    height: 20px;
+                }
+                .color{
+                    height: 20px;
+                    width: 83%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    .fix .navbar--web{
+        .web__list{
+            li{
+                .color{
+                    width: 88%;
+                }
+            }
+        }
+    }
+}
+
+
+@keyframes blink {
+    0% {opacity: 1}
+    50% {opacity: 0}
+    100% {opacity: 1}
+}
+.btn-scroll{
+    background: none;
+    border: none;
+    @include paragraph;
+    margin: 1rem auto;
+    letter-spacing: 5px;
+    width: 100%;
+    i{
+        animation: 2s blink ease-in-out infinite;
+        padding-top: 5px;
+    }
+}

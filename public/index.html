@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Content-language" content="es">
+
+    <script src="https://kit.fontawesome.com/0317db9f80.js" crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" href="../src/assets/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="../src/styles/main.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+    <title>Andrea Lecuona | Front-end Developer & Graphic Designer</title>
+    <meta name="description" content="Front-end Developer & Graphic Designer from Argentina">
+</head>
+<body>
+    <nav class="navbar--mobile">
+        <div class="mobile__toggle-btn">
+            <div class="icon">
+                <span>&nbsp;</span>
+                <span>&nbsp;</span>
+                <span>&nbsp;</span>
+            </div>
+        </div>
+        <div class="mobile__links">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#about-me">Sobre mí</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="main-sections" id="hero">
+        <div class="wrapper">
+            <h2  data-aos="fade-up"><span class="bold">Hola!</span> Soy <span class="name">Andrea</span></h2>
+            <h1 class="hero__text" data-aos="fade-up" data-aos-delay="300"><span class="bold">Desarrolladora</span> Frontend & <br><span class="bold">Diseñadora</span> Gráfica</h1>
+        </div>
+    </header>
+
+    <nav class="navbar--web">
+        <ul class="web__list">
+            <li><a href="#about-me">Sobre mí</a>
+                <div class="color"></div>
+            </li>
+            <li><a href="#portfolio">Portfolio</a>
+                <div class="color"></div>
+            </li>
+            <li><a href="#contact">Contacto</a>
+                <div class="color"></div>
+            </li>
+        </ul>
+    </nav>
+    <button class="btn-scroll" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="700" data-aos-offset="0">
+        Work<br><i class="fas fa-chevron-down"></i>
+    </button>
+
+
+    <main class="mainSections" id="content">
+        <div class="wrapper">
+
+            <section id="about-me">
+                
+                <div class="about-me__grid">
+                    <div class="about-me__image-container" data-aos="fade-up" data-aos-delay="300">
+                        <img src="../src/assets/images/about-me_perfil.png" alt="foto perfil">
+                    </div>
+                    <div class="about-me__text"  data-aos="fade-up" data-aos-delay="500">
+                        <h3>Soy Andrea Lecuona, desarrollo y diseño desde Buenos Aires, Argentina.</h3>
+                        <p>Luego de recibirme en la UBA como Diseñadora Gráfica y trabajar en proyectos de identidad, la curiosidad me acercó al mundo del desarrollo web, donde llevo mi criterio estético y capacidad de resolución de problemas al siguiente nivel.
+                        <br><br>
+                        Me apasiona el potencial de la Programación aplicada al Diseño (y viceversa), por eso <span class="bold">busco dedicarme al área de Frontend</span>, y así explotarlo en un ambiente de trabajo grupal, donde mis conocimientos y atención al detalle aporten valor al producto final.
+                        <br><br>
+                        Si no estoy frente a la computadora escribiendo código, probablemente me vas a encontrar en una clase de danza, sacando fotos o tomando café.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="portfolio">
+                <h3>Proyectos personales</h3>
+                
+                <div class="grid--simple">
+
+                    <!-- <div class="project__description" data-aos="fade-up" data-aos-delay="300">
+                        <h4>SpaceX Launch schedule</h4>
+                        <p>Trabajo con API Rest <br> <small class="bold"> React -Hooks</small></p>
+                        <a class="btn-link disabled" href="#">Pronto</a>
+                    </div>
+                    <div class="project__image-container" data-aos="fade-up" data-aos-delay="300">
+                        <img src="../src/assets/images/portfolio_work-in-progress.jpg" alt="lápiz gris (work in progress)">
+                    </div> -->
+
+                    <div class="project__description" data-aos="fade-up" data-aos-delay="300">
+                        <h4>Memotest game</h4>
+                        <p>3 modos de juego <br> <small class="bold"> Html -Css3 -Javascript -Webpack</small></p>
+                        <a class="btn-link" href="https://memoland-game.netlify.app/" target="_blank">Ver >></a>
+                    </div>
+                    <div class="project__image-container hasPreview" data-aos="fade-up" data-aos-delay="500" data-gif="../src/assets/images/portfolio_personales_memotest_gif.gif">
+                        <a href="https://memoland-game.netlify.app/" target="_blank"><img src="../src/assets/images/portfolio_personales_memotest.png" alt="preview con las piezas del juego"></a>
+                    </div>
+
+                </div>
+
+                <h3>Challenges y Bootcamp</h3>
+
+                <div class="grid--double">
+
+                    <div class="challenge__description">
+                        <h5>Curso React + Hooks</h5>
+                        <p>Especialización en MERN stack + Redux + Auth + Unit Test <span class="bold">- en curso -</span></p>
+                        <a class="btn-link" href="https://github.com/AndreaLecuona/React_Hooks_y_MERN" target="_blank">Repo >></a>
+                    </div>
+                    <div class="challenge__image-container">
+                        <a href="https://github.com/AndreaLecuona/React_Hooks_y_MERN" target="_blank"><img src="../src/assets/images/portfolio_work-in-progress.jpg" alt="lápiz gris (work in progress)"></a>
+                    </div>
+
+                    <div class="challenge__description">
+                        <h5>Desafío #Javascript30</h5>
+                        <p>30 retos de Vanilla Js - ES6 y mi toque personal en cada uno</p>
+                        <a class="btn-link" href="https://javascript30-by-an.netlify.app/" target="_blank">Ver >></a>
+                    </div>
+                    <div class="challenge__image-container hasPreview" data-gif="../src/assets/images/portfolio_learn_js30_gif.gif">
+                        <a href="https://javascript30-by-an.netlify.app/" target="_blank"><img src="../src/assets/images/portfolio_learn_js30_static.jpg" alt="preview del reto del día 1"></a>
+                    </div>
+
+                    <div class="challenge__description">
+                        <h5>Frontend Mentor Challenges</h5>
+                        <p>Práctica de habilidades de maquetación y responsive</p>
+                        <a class="btn-link" href="https://andre-challenges-dashboard.netlify.app/" target="_blank">Ver >></a>
+                    </div>
+                    <div class="challenge__image-container hasPreview" data-gif="../src/assets/images/portfolio_learn_fem_gif.gif">
+                        <a href="https://andre-challenges-dashboard.netlify.app/" target="_blank"><img src="../src/assets/images/portfolio_learn_fem_static.jpg" alt="página web mostrada en distintos dispositivos (imac, ipad, iphone)"></a>
+                    </div>
+
+                    <div class="challenge__description">
+                        <h5>Fullstack Dev Bootcamp</h5>
+                        <p>Desarrollo web apps con Javascript y Node + Express + EJS + MongoDB + OAuth</p>
+                        <a class="btn-link" href="https://github.com/AndreaLecuona/Complete_2020_Web_Development_Bootcamp.git" target="_blank">Repo >></a>
+                    </div>
+                    <div class="challenge__image-container hasPreview" data-gif="../src/assets/images/portfolio_learn_bootcamp_gif.gif">
+                        <a href="https://github.com/AndreaLecuona/Complete_2020_Web_Development_Bootcamp.git" target="_blank"><img src="../src/assets/images/portfolio_learn_bootcamp_static.jpg" alt="preview"></a>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="contact">
+                
+                <div class="contact___methods"  data-aos="fade-up" data-aos-delay="300">
+                    <div class="methods__social-media">
+                        <h3>Encontrame en</h3>
+                        <div class="social-media__links">
+                            <a href="www.linkedin.com/in/andrealecuona" target="_blank"><span class="sr-only">linkedin link</span><i
+                                    class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/AndreaLecuona" target="_blank"><span class="sr-only">github link</span><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://www.behance.net/AndreLecuona" target="_blank"><span class="sr-only">behance link</span><i
+                                    class="fab fa-behance-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="methods__email">
+                        <h3>O escribime a</h3>
+                        <p class="email bold">andre.lecuona91@gmail.com</p>
+                    </div>
+                
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <button class="btn-scroll">
+            <a href="#"></a><i class="fas fa-chevron-up"></i><br>Nos vemos pronto!</a>
+        </button> 
+        <p>Hecho con amor y café. 2021</p>
+    </footer>
+
+    <script src="../src/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>
